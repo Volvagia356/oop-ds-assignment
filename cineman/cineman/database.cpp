@@ -27,7 +27,7 @@ void Database::initFile(const char* filename, fstream& fs) {
     }
 }
 
-Database::Database() {
+Database::Database() { //Just living in the database, wow wow~
     initFile("members.db",this->membersFile);
     initFile("sales.db",this->salesFile);
     loadMembers();
